@@ -10,6 +10,7 @@ import DisplayChangeRedux from './components/DisplayChangeRedux'
 import storeReduxToolkit from './components/storeReduxToolkit'
 import Bai2 from './components/Bai2'
 import Bai3 from './components/Bai3'
+import Bai4 from './components/Bai4'
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <DisplayChangeRedux/>
         <Bai2/>
         <Bai3/>
+        <Bai4/>
       </Provider>
     </>
   )
