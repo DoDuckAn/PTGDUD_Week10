@@ -1,9 +1,13 @@
-const CounterReducer=(state=0,action)=>{
+const initialState={
+    counter:0
+}
+
+const CounterReducer=(state=initialState,action)=>{
     switch (action.type) {
         case "+":
-            return {...state,value:parseInt(state.value)+1}
+            return {...state,counter:parseInt(state.counter)+1}
         case "-":
-            return {...state,value:parseInt(state.value)-1}
+            return {...state,counter:parseInt(state.counter)-1}
         default:
             return state;
     }
