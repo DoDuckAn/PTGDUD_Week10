@@ -7,12 +7,11 @@ import { Provider } from 'react-redux'
 import storeRedux from './components/storeRedux'
 import CounterUseRedux from './components/CounterUseRedux'
 import DisplayChangeRedux from './components/DisplayChangeRedux'
+import storeReduxToolkit from './components/storeReduxToolkit'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Provider store={storeRedux}>
+      <Provider store={storeReduxToolkit}>
         <CounterUseReducer/>
         <CounterUseRedux/>
         <DisplayChangeRedux/>
