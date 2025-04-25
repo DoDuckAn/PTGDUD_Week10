@@ -1,11 +1,11 @@
 import {} from '@reduxjs/toolkit'
 import { useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { addTodo, deleteTodo, toggleTodo } from './toDoSlicer'
+import { addTodo, deleteTodo, toggleTodo } from './reduxSlicer'
 
 const Bai2=()=>{
     const dispatch=useDispatch()
-    const todos=useSelector(state=>state.todos.todos)
+    const todos=useSelector(state=>state.redux.todos)
     const [task,setTask]=useState('')
     const inputRef=useRef()
     return(

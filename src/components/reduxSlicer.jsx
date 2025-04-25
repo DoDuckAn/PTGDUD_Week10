@@ -1,9 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const todosSlice=createSlice({
+const reduxsSlice=createSlice({
     name:'todos',
     initialState:{
-        todos:[]
+        todos:[],
+        theme:false
     },
     reducers:{
         addTodo:(state,action)=>{
@@ -19,9 +20,12 @@ const todosSlice=createSlice({
         toggleTodo:(state,action)=>{
             let todo=state.todos.find(item=>item.id===action.payload)
             todo.toggle=!todo.toggle
+        },
+        toggleTheme:(state)=>{
+            state.theme=!state.theme
         }
     }
 })
 
-export const {addTodo,toggleTodo,deleteTodo}=todosSlice.actions
-export default todosSlice.reducer
+export const {addTodo,toggleTodo,deleteTodo,toggleTheme}=reduxsSlice.actions
+export default reduxsSlice.reducer
