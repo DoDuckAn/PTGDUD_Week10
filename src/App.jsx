@@ -8,6 +8,7 @@ import storeRedux from './components/storeRedux'
 import CounterUseRedux from './components/CounterUseRedux'
 import DisplayChangeRedux from './components/DisplayChangeRedux'
 import storeReduxToolkit from './components/storeReduxToolkit'
+import Bai2 from './components/Bai2'
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
         <CounterUseReducer/>
         <CounterUseRedux/>
         <DisplayChangeRedux/>
+        <Bai2/>
       </Provider>
     </>
   )
